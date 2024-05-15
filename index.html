@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập DOM: BC68-Trần Minh Hiếu</title>
+    <!-- GG Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MyCss -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="tab-item active">
+          <i class="tab-icon-close fa-solid fa-book"></i>
+          <i class="tab-icon-open fa-solid fa-book-open"></i>
+          <span class="tab-name active">Bài 1</span>
+        </div>
+        <div class="tab-item">
+          <i class="tab-icon-close fa-solid fa-book"></i>
+          <i class="tab-icon-open fa-solid fa-book-open"></i>
+          <span class="tab-name active">Bài 2</span>
+        </div>
+        <div class="tab-item">
+          <i class="tab-icon-close fa-solid fa-book"></i>
+          <i class="tab-icon-open fa-solid fa-book-open"></i>
+          <span class="tab-name active">Bài 3</span>
+        </div>
+        <div class="tab-item">
+          <i class="tab-icon-close fa-solid fa-book"></i>
+          <i class="tab-icon-open fa-solid fa-book-open"></i>
+          <span class="tab-name active">Bài 4</span>
+        </div>
+        <div class="tab-item">
+          <i class="tab-icon-close fa-solid fa-book"></i>
+          <i class="tab-icon-open fa-solid fa-book-open"></i>
+          <span class="tab-name active">Bài 5</span>
+        </div>
+        <div class="tab-line"></div>
+      </div>
+      <!-- Tabcontent -->
+      <div class="tab-content">
+        <!-- Tính tiền lương -->
+        <form class="pane-item active">
+          <h2>Tính Tiền Lương</h2>
+          <div class="tab-input">
+            <input
+              type="number"
+              name="salary-date"
+              id="salary-date"
+              placeholder="Nhập lương 1 ngày"
+            />
+            <input
+              type="number"
+              name="date"
+              id="date"
+              placeholder="Số ngày làm"
+            />
+          </div>
+        </form>
+        <!-- Tính giá trị trung bình -->
+        <form class="pane-item">
+          <h2>Tính giá trị trung bình</h2>
+          <div class="tab-input">
+            <input
+              type="number"
+              id="number-1"
+              value=""
+              placeholder="Nhập số thứ 1"
+            />
+            <input type="number" id="number-2" placeholder="Nhập số thứ 2" />
+            <input type="number" id="number-3" placeholder="Nhập số thứ 3" />
+            <input type="number" id="number-4" placeholder="Nhập số thứ 4" />
+            <input type="number" id="number-5" placeholder="Nhập số thứ 5" />
+          </div>
+        </form>
+        <!-- Quy đổi tiền -->
+        <form class="pane-item">
+          <h2>Quy đổi tiền</h2>
+          <div class="tab-input">
+            <input type="text" id="currency" placeholder="Nhập số tiền USD" />
+          </div>
+        </form>
+        <!-- Tính diện tích, chu vi hình chữ nhật -->
+        <form class="pane-item">
+          <h2>Tính diện tích, chu vi hình chữ nhật</h2>
+          <div class="tab-input">
+            <input
+              type="number"
+              id="rectangle-lenght"
+              placeholder="Nhập chiều dài"
+            />
+            <input
+              type="number"
+              id="rectangle-width"
+              placeholder="Nhập chiều rồng"
+            />
+          </div>
+        </form>
+        <!-- Tính tổng 2 ký số -->
+        <form class="pane-item">
+          <h2>Tính tổng 2 ký số</h2>
+          <div class="tab-input">
+            <input
+              type="text"
+              id="sum-number"
+              placeholder="Nhập số có 2 chữ số"
+            />
+          </div>
+        </form>
+      </div>
+      <button class="sumbit">Tính tổng</button>
+
+      <div class="tab-result"></div>
+      <div></div>
+    </div>
+    <!-- ===============MY JS====================== -->
+    <script src="./index.js"></script>
+  </body>
+</html>
